@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '2vimpk7%%t)vc@p^&eb5z&hjpai=pit6nuoatz_w8dw=y)ed9m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["currypolls.herokuapp.com"]
 
