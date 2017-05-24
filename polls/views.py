@@ -43,7 +43,7 @@ def next(request, question_id):
     # dealing with POST data. This prevents data from being
     # poosted twice if a user hits the Back button.
 #    return HttpResponseRedirect(reverse('polls:sake', args=(question.id,)))
-    return HttpResponseRedirect(reverse('polls:sake', args=(2,)))
+    return HttpResponseRedirect(reverse('polls:results', args=(question.id,)))
 
 def vote(request, question_id):
   question = get_object_or_404(Question, pk=question_id)
