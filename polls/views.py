@@ -42,7 +42,7 @@ def next(request, question_id):
     # Always return an HttpResponseRedirect after successfully
     # dealing with POST data. This prevents data from being
     # poosted twice if a user hits the Back button.
-    return HttpResponseRedirect(reverse('polls:sake', args=(question.id+1,)))
+    return HttpResponseRedirect(reverse('polls:sake', args=(question.id,)))
 
 def vote(request, question_id):
   question = get_object_or_404(Question, pk=question_id)
