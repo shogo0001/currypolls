@@ -1,14 +1,10 @@
-{% extends 'polls/bootstrap.html' %}
-
-{% block content %}
 {% if latest_question_list %}
-  <ul class="list-group">
+  <ul>
   {% for question in latest_question_list %}
-    <li class="list-group-item"><a href="{ url 'polls:detail' question.id % }">{{ question.question_text }}</a>
+    <li><a href="{ url 'polls:detail' question.id % }">{{ question.question_text }}</a>
     </li>
     {% endfor %}
     </ul>
 {% else %}
   <p>No polls are available.</p>
 {% endif %}
-{% endblock %}
