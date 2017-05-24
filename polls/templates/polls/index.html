@@ -1,3 +1,6 @@
+{% extends 'polls/bootstrap.html' %}
+
+{% block content %}
 {% if latest_question_list %}
   <ul class="list-group">
   {% for question in latest_question_list %}
@@ -8,3 +11,4 @@
 {% else %}
   <p>No polls are available.</p>
 {% endif %}
+{% endblock %}
