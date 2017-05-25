@@ -25,8 +25,8 @@ SECRET_KEY = '2vimpk7%%t)vc@p^&eb5z&hjpai=pit6nuoatz_w8dw=y)ed9m'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+# ALLOWED_HOSTS = ["currypolls.herokuapp.com", "127.0.0.1", "localhost" ]
 ALLOWED_HOSTS = ["currypolls.herokuapp.com"]
-
 
 # Application definition
 
